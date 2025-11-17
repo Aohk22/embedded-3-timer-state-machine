@@ -4,4 +4,4 @@ Project for practicing Adapter design pattern. State machine implementation usin
 
 # State Machine UML
 
-(UML Diagram)[src/timer.flat.uml.drawio]
+[UML Diagram](src/timer.flat.uml.drawio)
