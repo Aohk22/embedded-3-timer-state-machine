@@ -1,0 +1,3 @@
+#define CODE_CP437_SPC 32
+#define CODE_CP437_0 48
+#define CODE_CP437_COLON 58
