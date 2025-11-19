@@ -36,5 +36,6 @@
 
 `end progress`  
 
+- Change UML fields to match code.
 - Video demonstration.
 - Write DOCS?.
