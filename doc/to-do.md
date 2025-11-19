@@ -24,5 +24,6 @@
 `end progress`  
 
 - Change UML fields to match code.
+- Add fritzing diagram or something.
 - Video demonstration.
 - Write DOCS?.
