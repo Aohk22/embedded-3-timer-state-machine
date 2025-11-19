@@ -1,5 +1,19 @@
-- ~~Refactor display to an interface that uses and adapter library (Ssd1306Adapter.cpp).~~
+Code:
 
-- Move LCD, CP437 libraries to global.
+`progress`  
+- Refactor display to an interface that uses and adapter library (Ssd1306Adapter.cpp).
+- Implement button input with debouncing.
+- Fix SSD1306 Library implementaion.
+  - Try implementing adapter as a class.
+- Implement row clearing using `getBuffer()`.
+`end progress`  
+- Move Adapter library, Cp437 library to global for reusage.
   - https://community.platformio.org/t/lib-deps-creating-different-versions-of-included-file/46520
   - https://community.platformio.org/t/difficulties-understanding-the-right-way-to-include-local-libraries/46558
+
+Repo:
+
+`progress`  
+`end progress`  
+- Fix UML diagram embed.
+- Write DOCS?.

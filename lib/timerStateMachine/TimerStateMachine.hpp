@@ -1,9 +1,14 @@
+#ifndef LIB_TIMERSTATEMACHINE_HPP_INCLUDED
+#define LIB_TIMERSTATEMACHINE_HPP_INCLUDED
+
 #include <stdint.h>
 
-typedef enum {
+typedef enum
+{
   EVENT_HANDLED,
   EVENT_IGNORED,
-  EVENT_TRANS
+  EVENT_TRANS,
+  EVENT_UNCAUGHT
 } timer_event_status_t;
 
 typedef enum {
@@ -28,23 +33,28 @@ typedef struct {
   uint32_t current;
   uint32_t elapsed;
   uint32_t time;
-  timer_state_t state; 
+  timer_state_t state;
 } timer_t;
 
 // Event types.
-typedef struct {
+typedef struct
+{
   timer_signals_t sig;
 } timer_event_t;
 
-typedef struct {
+typedef struct
+{
   timer_event_t super;
 } timer_event_user_t;
 
-typedef struct {
+typedef struct
+{
   timer_event_t super;
   uint8_t ss; // The "parameter".
 } timer_event_tick_t;
 
 // Function prototypes.
-void timer_init(timer_t *timer);
-timer_event_status_t timer_state_machine(timer_t *timer, timer_event_t *e) {
+bool timerInit(timer_t *timer);
+timer_event_status_t timerStateMachine(timer_t *timer, timer_event_t *e);
+
+#endif
