@@ -1,4 +1,4 @@
-Code:
+## Code
 
 `progress`  
 - Refactor display to an interface that uses and adapter library (Ssd1306Adapter.cpp).
@@ -11,10 +11,11 @@ Code:
   - https://community.platformio.org/t/lib-deps-creating-different-versions-of-included-file/46520
   - https://community.platformio.org/t/difficulties-understanding-the-right-way-to-include-local-libraries/46558
 
-Repo:
+## Repo
 
 `progress`  
-`end progress`  
 - Fix UML diagram embed.
+- Create README script.
+`end progress`  
 - Video demonstration.
 - Write DOCS?.
