@@ -162,7 +162,8 @@ timer_event_status_t _handle_state_PAUSE(timer_t *const timer, timer_event_t *co
             timer->state = S_COUNT;
             return EVENT_TRANS;
         case ABORT:
-            timer->state = S_IDLE;
+            // timer->state = S_IDLE;
+			timerInit(timer);
             return EVENT_TRANS;
     }
     return EVENT_UNCAUGHT;

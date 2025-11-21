@@ -6,7 +6,7 @@
 const uint16_t debounce = 500;
 Ssd1306Adapter display;
 timer_t timer;
-timer_event_tick_t tickEvent = {(timer_signals_t)0, 0};
+timer_event_tick_t tickEvent = {{(timer_signals_t)0}, 0};
 timer_event_user_t userEvent = {(timer_signals_t)0};
 uint32_t timePrev = millis();
 uint32_t btnTime = millis();
